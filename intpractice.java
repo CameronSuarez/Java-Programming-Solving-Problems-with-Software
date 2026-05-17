@@ -3,6 +3,9 @@ public class intpractice {
         int x = 5;
         int y = x + 2;
         int z = y + x;
-        System.out.println(z);
+        int a = z * x;
+        int b = a / 2;
+        int c = b * 50;
+        System.out.println(c);
     }
 }
