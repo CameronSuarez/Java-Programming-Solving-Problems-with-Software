@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class minicalculator {
 
     public static int add(int a, int b) {
@@ -14,12 +16,18 @@ public class minicalculator {
     }
 
     public static void main(String[] args) {
-        int num1 = 5;
-        int num2 = 10;
 
-        System.out.println("add " + num1 + "+ " + num2 + "= " +add(num1,num2));
-        System.out.println(subtract(num1, num2));
-        System.out.println(multiply(num1, num2));
-        System.out.println(divide(num1, num2));
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter second number: ");
+        int num2 = input.nextInt();
+
+        System.out.println("add " + num1 + " + " + num2 + " = " + add(num1,num2));
+        System.out.println("subtract " + num1 + " - " + num2 + " = " + subtract(num1, num2));
+        System.out.println("multiply " + num1 + " * " + num2 + " = " + multiply(num1, num2));
+        System.out.println("divide " + num1 + " / " + num2 + " = " + divide(num1, num2));
     }
 }
